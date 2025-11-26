@@ -1,0 +1,86 @@
+/* CSS Reset Moderno */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Eliminar márgenes y paddings predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuración del documento */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Altura mínima del body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Elementos multimedia */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Texto y tipografía */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Botones */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Evitar desbordamiento de texto */
+#root,
+#__next {
+  isolation: isolate;
+}

@@ -1,0 +1,136 @@
+:root {
+  /* Colores */
+  --background: #dbdbd4;
+
+  /* Fuentes */
+  --font-main: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--background);
+  font-family: var(--font-main);
+}
+
+.layout {
+  width: 80%;
+  margin: 5rem auto;
+  max-width: 1200px;
+}
+
+/* HEADER */
+.layout__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.header__logo-container {
+  height: 100%;
+  display: flex;
+}
+
+.text__logo {
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+
+.text__logo span {
+    font-weight: 200;
+    font-size: 2rem;
+}
+.nav__items {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.gallery__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* gap: 1rem; */
+}
+
+.gallery__cover-container {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+}
+
+.cover__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery__item:hover .gallery__overlay {
+  opacity: 1;
+}
+
+.gallery__item-title,
+.gallery__item-tag {
+  color: white;
+}
+
+.gallery__item-title {
+  font-size: 3rem;
+}
+
+.gallery__item-tag {
+  font-size: 2 rem;
+  font-weight: normal;
+}
+
+
+/* FOOTER */
+.layout__footer {
+    margin-top: 5rem;
+}
+
+/* --- PAGINAS DE PROYECTO --- */
+.project__presentation {
+  width: 80%;
+  margin: 8rem auto;
+}
+
+.project__title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.project__description {
+  font-size: 1.8rem;
+}
+
+.project__section {
+  font-size: 2.5rem;
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.project__image {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
