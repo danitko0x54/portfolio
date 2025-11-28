@@ -1,0 +1,52 @@
+/*
+
+/* BASE: Desktop (1024px en adelante) */
+/* Estilos por defecto */
+
+/* TABLET: 768px */
+@media (max-width: 768px) {
+  .layout {
+    width: 100%;
+  }
+
+  .layout__header {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  .layout__footer {
+    width: 80%;
+    margin: 5rem auto;
+  }
+
+  .gallery__cover-container {
+    height: 30rem;
+  }
+}
+
+/* MÓVIL: 640px */
+@media (max-width: 640px) {
+  .gallery__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 1rem; */
+  }
+
+  .gallery__cover-container {
+    height: 50rem;
+  }
+
+  .layout__header {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .text__logo {
+    text-align: center;
+  }
+
+  .nav__items {
+    font-size: 2rem;
+    gap: 6rem;
+  }
+}
